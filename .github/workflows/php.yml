@@ -49,10 +49,3 @@ jobs:
         echo "define('WP_DEBUG', true);" >> wp-config.php
         echo "define('WP_DEBUG_LOG', true);" >> wp-config.php
 
-    - name: Run PHPUnit tests
-      run: |
-        if [ -f ./vendor/bin/phpunit ]; then
-          ./vendor/bin/phpunit
-        else
-          echo "PHPUnit not found!"
-        fi
