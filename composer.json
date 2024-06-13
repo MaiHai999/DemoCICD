@@ -1,0 +1,17 @@
+{
+    "name": "your-vendor-name/your-project-name",
+    "description": "A brief description of your project",
+    "require": {
+        "php": ">=7.4",
+        "wp-cli/wp-cli": "^2.4",
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
